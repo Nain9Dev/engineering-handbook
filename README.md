@@ -49,8 +49,11 @@
 | **Architecture** | [Clean Architecture](architecture/clean-architecture.md) | Strict 4-layer separation (Domain, Application, Infrastructure, Presentation) for .NET and Python. |
 | **Architecture** | [Dual Persistence Pattern](architecture/dual-persistence.md) | CQRS-inspired split: transactional writes via EF Core, sub-millisecond reads via Dapper. |
 | **Architecture** | [Deterministic 3D Validation](architecture/deterministic-validation.md) | Khronos GLB/glTF standards, quantum threshold ($10^{-12}\text{ m}^2$), checks C1-C10, fail-closed gating. |
+| **Architecture** | [Architectural Fitness Functions](architecture/fitness-functions.md) | Automated tests in CI asserting layer boundaries (ArchUnitNET for .NET, AST linters for Python). |
 | **Governance** | [Spec-Driven Lifecycle](governance/spec-driven-lifecycle.md) | The canonical numbered `docs/` folder convention (`00` through `08`), TDD gates, and task tagging. |
 | **Governance** | [ADR Template](governance/adr-template.md) | Standardized Architectural Decision Record format for recording design trade-offs. |
+| **Governance** | [Dependabot Governance](governance/dependabot-governance.md) | Standard grouped weekly dependencies across npm, pip, nuget, and actions to eliminate PR noise. |
+| **Governance** | [Universal Local Development](governance/local-development.md) | Unified developer experience via standard Taskfile commands (task dev, task test, task build). |
 | **Governance** | [Zero-Cost Philosophy](governance/zero-cost-philosophy.md) | Principles and architectures for running a multi-application professional portfolio at 0,00 EUR. |
 
 ---
