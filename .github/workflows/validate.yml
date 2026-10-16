@@ -1,0 +1,42 @@
+name: Validate Handbook Integrity
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify Link Integrity & Forbidden Tokens
+        run: |
+          python -c "
+          import os, sys, re
+
+          forbidden = [r'\bContrast\b', r'\bDavid\b', r'01-brandbook']
+          violations = []
+
+          for root, _, files in os.walk('.'):
+              if '.git' in root:
+                  continue
+              for file in files:
+                  if file.endswith('.md'):
+                      path = os.path.join(root, file)
+                      with open(path, 'r', encoding='utf-8') as f:
+                          content = f.read()
+                      for pat in forbidden:
+                          if re.search(pat, content):
+                              violations.append(f'{path} violates {pat}')
+
+          if violations:
+              print('Integrity checks failed:')
+              for v in violations:
+                  print(' -', v)
+              sys.exit(1)
+          print('All handbook integrity checks passed successfully.')
+          "
