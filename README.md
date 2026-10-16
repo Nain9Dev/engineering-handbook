@@ -50,8 +50,13 @@
 | **Architecture** | [Dual Persistence Pattern](architecture/dual-persistence.md) | CQRS-inspired split: transactional writes via EF Core, sub-millisecond reads via Dapper. |
 | **Architecture** | [Deterministic 3D Validation](architecture/deterministic-validation.md) | Khronos GLB/glTF standards, quantum threshold ($10^{-12}\text{ m}^2$), checks C1-C10, fail-closed gating. |
 | **Architecture** | [Architectural Fitness Functions](architecture/fitness-functions.md) | Automated tests in CI asserting layer boundaries (ArchUnitNET for .NET, AST linters for Python). |
+| **Architecture** | [C4 Architectural Modeling](architecture/c4-model-standard.md) | Context, Container, and Component modeling using GitHub-native Mermaid flowchart syntax. |
+| **Architecture** | [Legacy .NET Modernization](architecture/legacy-dotnet-modernization.md) | Strangler Fig proxying via YARP, WCF-to-gRPC, and shadow running for zero-downtime upgrades. |
+| **Architecture** | [3D Conformance Rubric](architecture/3d-conformance-rubric.md) | Industrial audit criteria and pass/fail thresholds for digital assets across geometry and PBR. |
 | **Governance** | [Spec-Driven Lifecycle](governance/spec-driven-lifecycle.md) | The canonical numbered `docs/` folder convention (`00` through `08`), TDD gates, and task tagging. |
 | **Governance** | [ADR Template](governance/adr-template.md) | Standardized Architectural Decision Record format for recording design trade-offs. |
+| **Governance** | [Technical Due Diligence](governance/technical-due-diligence.md) | Staff architect evaluation framework for codebases, modularity, FinOps, and resilience. |
+| **Governance** | [Two-Audience README Standard](governance/readme-specification.md) | Dual-audience repository documentation pattern for executive buyers and senior architects. |
 | **Governance** | [Dependabot Governance](governance/dependabot-governance.md) | Standard grouped weekly dependencies across npm, pip, nuget, and actions to eliminate PR noise. |
 | **Governance** | [Universal Local Development](governance/local-development.md) | Unified developer experience via standard Taskfile commands (task dev, task test, task build). |
 | **Governance** | [Zero-Cost Philosophy](governance/zero-cost-philosophy.md) | Principles and architectures for running a multi-application professional portfolio at 0,00 EUR. |
