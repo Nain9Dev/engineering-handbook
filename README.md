@@ -46,6 +46,7 @@
 
 | Section | Topic | Summary |
 | :--- | :--- | :--- |
+| **Architecture** | [Enterprise Context Map](architecture/enterprise-context-map.md) | Strategic DDD bounded contexts, interaction blueprints, and Level 1/2 C4 topology across NainDev. |
 | **Architecture** | [Clean Architecture](architecture/clean-architecture.md) | Strict 4-layer separation (Domain, Application, Infrastructure, Presentation) for .NET and Python. |
 | **Architecture** | [Dual Persistence Pattern](architecture/dual-persistence.md) | CQRS-inspired split: transactional writes via EF Core, sub-millisecond reads via Dapper. |
 | **Architecture** | [Deterministic 3D Validation](architecture/deterministic-validation.md) | Khronos GLB/glTF standards, quantum threshold ($10^{-12}\text{ m}^2$), checks C1-C10, fail-closed gating. |
@@ -53,6 +54,7 @@
 | **Architecture** | [C4 Architectural Modeling](architecture/c4-model-standard.md) | Context, Container, and Component modeling using GitHub-native Mermaid flowchart syntax. |
 | **Architecture** | [Legacy .NET Modernization](architecture/legacy-dotnet-modernization.md) | Strangler Fig proxying via YARP, WCF-to-gRPC, and shadow running for zero-downtime upgrades. |
 | **Architecture** | [3D Conformance Rubric](architecture/3d-conformance-rubric.md) | Industrial audit criteria and pass/fail thresholds for digital assets across geometry and PBR. |
+| **Architecture** | [FinOps & Capacity Planning](architecture/finops-capacity-planning.md) | Two-tier cost modeling: 0,00 EUR portfolio vs 10k req/min enterprise production scaling. |
 | **Governance** | [Spec-Driven Lifecycle](governance/spec-driven-lifecycle.md) | The canonical numbered `docs/` folder convention (`00` through `08`), TDD gates, and task tagging. |
 | **Governance** | [ADR Template](governance/adr-template.md) | Standardized Architectural Decision Record format for recording design trade-offs. |
 | **Governance** | [Technical Due Diligence](governance/technical-due-diligence.md) | Staff architect evaluation framework for codebases, modularity, FinOps, and resilience. |
