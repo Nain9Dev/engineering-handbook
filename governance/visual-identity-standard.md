@@ -10,7 +10,7 @@ All visual assets across the NainDev portfolio reject arbitrary decoration, gene
 
 - **Mathematical Blueprint Grid**: Background grids with millimeter millimeter-inspired subdivisions (40px major cells, 8px subdivisions) rendered dynamically via vector SVG.
 - **Dimensional Cotas & Callouts**: Technical dimension lines, coordinate readouts (`[0, 0, 0]`, bounding boxes, angles like `52.0°`), and system tags indicating active runtime (`.NET 10`, `Python 3.12`, `Vue 3`).
-- **Surface Law & High Contrast**: Deep Blueprint Dark (`#002B66` / `#051329`) and Architectural Paper Light (`#EDF1F6` / `#F7F9FC`), conforming strictly to **WCAG 2.1 AAA** contrast standards (12.0:1 on deep blue).
+- **Surface Law & WCAG Legibility**: Deep Blueprint Dark (`#002B66` / `#051329`) and Architectural Paper Light (`#EDF1F6` / `#F7F9FC`), conforming strictly to **WCAG 2.1 AAA** luminance ratio standards (12.0:1 on deep blue).
 - **Zero Billable Cost**: 100% vector SVG generation. Zero reliance on third-party image hosting, paid design software, or external CDNs.
 
 ---
@@ -25,11 +25,11 @@ All visual assets across the NainDev portfolio reject arbitrary decoration, gene
 
 ---
 
-## 3. Official Color Tokens & Contrast Matrix
+## 3. Official Color Tokens & Luminance Matrix
 
 All banners, diagrams, and web components derive from the official NainDev Design System tokens:
 
-| Token Name | Hex Value | Semantic Role | Luminance Contrast Ratio |
+| Token Name | Hex Value | Semantic Role | Luminance Ratio |
 | :--- | :--- | :--- | :--- |
 | `--nain-blue-deep` | `#002B66` | Primary dark surface & ink | **12.0:1 (AAA)** against light backgrounds |
 | `--nain-blue` | `#0047AB` | Brand signature & primary accents | **7.4:1 (AAA)** on light surfaces |
