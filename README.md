@@ -63,6 +63,7 @@
 | **Governance** | [Universal Local Development](governance/local-development.md) | Unified developer experience via standard Taskfile commands (task dev, task test, task build). |
 | **Governance** | [Zero-Cost Philosophy](governance/zero-cost-philosophy.md) | Principles and architectures for running a multi-application professional portfolio at 0,00 EUR. |
 | **Governance** | [Visual Identity Standard](governance/visual-identity-standard.md) | Technical blueprint aesthetic, dual-theme vector banners, and showcase integration. |
+| **Governance** | [Licensing Policy](governance/licensing-policy.md) | Dual-tier licensing strategy: All Rights Reserved for brand/portfolio vs. MIT/AGPL for code. |
 
 ---
 
