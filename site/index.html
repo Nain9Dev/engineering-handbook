@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#EDF1F6">
+  <title>NainDev Engineering Handbook · Standards and architecture</title>
+  <meta name="description" content="The engineering standards behind the NainDev ecosystem: tenets, a technology radar, architecture blueprints and governance policies, written as plain Markdown.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="shell">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 18 11 6M10 18l7-12M16 18l4-7"/></svg>
+      <span>Engineering Handbook</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#tenets">Tenets</a>
+      <a href="#radar">Radar</a>
+      <a href="#directory">Directory</a>
+      <a class="keep" href="https://github.com/Nain9Dev/engineering-handbook">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="shell">
+    <span class="eyebrow">Standards · Architecture · Governance</span>
+    <h1>How the NainDev ecosystem is built, written down.</h1>
+    <p class="lead">One handbook for the decisions every NainDev project shares: how code is layered, how it is verified, how work is tracked and what a repository must document. It is plain Markdown in a public repository, so anyone can read the rules a project is held to.</p>
+    <div class="actions">
+      <a class="btn primary" href="#directory">Browse the handbook</a>
+      <a class="btn" href="https://github.com/Nain9Dev/engineering-handbook">View the source</a>
+    </div>
+    <ul class="chips" aria-label="Key facts">
+      <li>9 architecture documents</li>
+      <li>10 governance documents</li>
+      <li>Open to read</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="tenets" aria-labelledby="tenets-title">
+  <div class="shell">
+    <h2 id="tenets-title">Five engineering tenets</h2>
+    <p class="intro">Everything else in the handbook follows from these.</p>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">1</span>
+        <h3>Determinism over heuristics</h3>
+        <p>Systems yield reproducible, verifiable outcomes. Ambiguous heuristics and uncalibrated thresholds are not accepted.</p>
+      </article>
+      <article class="card">
+        <span class="tag">2</span>
+        <h3>Spec-driven engineering</h3>
+        <p>Code is the last artifact of a pipeline: numbered documentation phases, explicit acceptance criteria and recorded decisions come first.</p>
+      </article>
+      <article class="card">
+        <span class="tag">3</span>
+        <h3>Test-first verification</h3>
+        <p>A feature or fix without an automated test does not exist. Tests bracket every structural refactor.</p>
+      </article>
+      <article class="card">
+        <span class="tag">4</span>
+        <h3>Clean layering</h3>
+        <p>Domain logic stays decoupled from databases, frameworks and transport. Dependencies flow inward.</p>
+      </article>
+      <article class="card">
+        <span class="tag">5</span>
+        <h3>Zero-cost production footprint</h3>
+        <p>Portfolio applications and demos run at no recurring infrastructure cost, using static builds, free tiers and public automation.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="radar" aria-labelledby="radar-title">
+  <div class="shell">
+    <h2 id="radar-title">The paved road</h2>
+    <p class="intro">The default stack, marked Adopt on the handbook's technology radar. A project starts here unless its own documentation says otherwise.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Area</th><th scope="col">Adopt</th></tr></thead>
+        <tbody>
+          <tr><td>Backend</td><td>ASP.NET Core on .NET 10 with Clean Architecture; Python 3.12+ with FastAPI</td></tr>
+          <tr><td>3D and data</td><td>Trimesh, NumPy, SciPy, Shapely, Pydantic v2</td></tr>
+          <tr><td>Persistence</td><td>PostgreSQL; EF Core 10 for writes, Dapper for reads</td></tr>
+          <tr><td>Frontend</td><td>Vanilla JS (ES modules), Astro, Vue 3 with strict TypeScript</td></tr>
+          <tr><td>Testing</td><td>xUnit v3, Vitest, Playwright, pytest with Hypothesis, Testcontainers</td></tr>
+          <tr><td>Hosting</td><td>GitHub Pages, Cloudflare DNS and SSL, GitHub Actions</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="directory" aria-labelledby="directory-title">
+  <div class="shell">
+    <h2 id="directory-title">What is in the handbook</h2>
+    <p class="intro">Each entry opens the full document on GitHub.</p>
+
+    <h3 class="sub-title">Architecture</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Document</th><th scope="col">What it covers</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/architecture/enterprise-context-map.md">Enterprise context map</a></td><td>Bounded contexts, interactions and C4 levels 1 and 2 across NainDev.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/architecture/clean-architecture.md">Clean Architecture</a></td><td>Four layers (Domain, Application, Infrastructure, Presentation) for .NET and Python.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/architecture/dual-persistence.md">Dual persistence</a></td><td>Transactional writes through EF Core, fast reads through Dapper.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/architecture/deterministic-validation.md">Deterministic 3D validation</a></td><td>GLB and glTF checks C1 to C10, a quantum threshold of 10<sup>-12</sup> m² and fail-closed gating.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/architecture/fitness-functions.md">Fitness functions</a></td><td>CI tests that assert layer boundaries, with ArchUnitNET and AST linters.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/architecture/c4-model-standard.md">C4 modelling</a></td><td>Context, container and component diagrams in Mermaid.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/architecture/legacy-dotnet-modernization.md">Legacy .NET modernisation</a></td><td>Strangler Fig proxying with YARP, WCF to gRPC and shadow running.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/architecture/3d-conformance-rubric.md">3D conformance rubric</a></td><td>Audit criteria and pass or fail thresholds for geometry and PBR.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/architecture/finops-capacity-planning.md">FinOps and capacity</a></td><td>Cost models for a zero-cost portfolio and for a 10k requests per minute production system.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-title">Governance</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Document</th><th scope="col">What it covers</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/governance/spec-driven-lifecycle.md">Spec-driven lifecycle</a></td><td>The numbered <code>docs/</code> folder convention, TDD gates and task tagging.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/governance/adr-template.md">ADR template</a></td><td>A standard format for recording design trade-offs.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/governance/technical-due-diligence.md">Technical due diligence</a></td><td>A framework for evaluating a codebase: modularity, FinOps and resilience.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/governance/readme-specification.md">Two-audience README</a></td><td>One README that serves both a buyer and a senior architect.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/governance/dependabot-governance.md">Dependabot governance</a></td><td>Grouped weekly updates across npm, pip, NuGet and Actions.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/governance/local-development.md">Local development</a></td><td>The same Taskfile commands in every repository: dev, test, build.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/governance/zero-cost-philosophy.md">Zero-cost philosophy</a></td><td>How a multi-application portfolio runs at no recurring cost.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/governance/visual-identity-standard.md">Visual identity</a></td><td>The technical blueprint look, dual-theme banners and showcase integration.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/governance/ui-localization-standard.md">UI localisation</a></td><td>Spanish by default with an English toggle, and code and docs in English.</td></tr>
+          <tr><td><a href="https://github.com/Nain9Dev/engineering-handbook/blob/main/governance/licensing-policy.md">Licensing policy</a></td><td>All rights reserved for brand and portfolio, MIT or AGPL for code.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tracking" aria-labelledby="tracking-title">
+  <div class="shell">
+    <h2 id="tracking-title">Who does each task</h2>
+    <p class="intro">Every task in a repository roadmap carries one of three ownership tags, so it is clear what can run without a person.</p>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">[A] Autonomous</span>
+        <p>Runs end to end in CI or with an AI assistant, with no manual step.</p>
+      </article>
+      <article class="card">
+        <span class="tag">[M] Mutual</span>
+        <p>Needs a human action to close: authorisation, an account or a key.</p>
+      </article>
+      <article class="card">
+        <span class="tag">[H] Human only</span>
+        <p>Reserved for the principal architect: business strategy, client agreements and final approvals.</p>
+      </article>
+    </div>
+    <p class="note">Isolation rule: private and client code stays separate. No business rules, credentials or internal schemas move into public repositories, and public material is scanned for confidential names before it is published.</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <span>By Aitor Nain Mendoza Vallejo · Documents are published in the repository.</span>
+    <span><a href="https://github.com/Nain9Dev/engineering-handbook">GitHub</a> · <a href="https://www.naindev.com">naindev.com</a></span>
+  </div>
+</footer>
+</body>
+</html>
