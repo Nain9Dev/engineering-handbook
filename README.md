@@ -1,7 +1,15 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="docs/assets/banner-light.svg">
+  <img alt="NainDev Engineering Handbook Architectural Blueprint" src="docs/assets/banner-dark.svg" width="100%">
+</picture>
+
 # NainDev Engineering Handbook
 
 > The definitive engineering standards, architectural blueprints, quality gates, and governance policies for the NainDev ecosystem.
 
+[![Language: English](https://img.shields.io/badge/Language-English-blue.svg)](#)
+[![Versión en Español](https://img.shields.io/badge/Versión-Español-red.svg)](README.es.md)
 [![Ecosystem Status](https://img.shields.io/badge/status-active-success)](https://status.naindev.com)
 [![Brand Identity](https://img.shields.io/badge/brand-v1.5-blue)](https://brand.naindev.com)
 [![Zero-Cost Budget](https://img.shields.io/badge/budget-0.00_EUR-brightgreen)](governance/zero-cost-philosophy.md)
