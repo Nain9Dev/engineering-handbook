@@ -73,6 +73,7 @@
 | **Governance** | [Visual Identity Standard](governance/visual-identity-standard.md) | Technical blueprint aesthetic, dual-theme vector banners, and showcase integration. |
 | **Governance** | [UI Localization Standard](governance/ui-localization-standard.md) | Bilingual product UI standard (Spanish default, paired English toggle, 100% English code/docs). |
 | **Governance** | [Licensing Policy](governance/licensing-policy.md) | Dual-tier licensing strategy: All Rights Reserved for brand/portfolio vs. MIT/AGPL for code. |
+| **Governance** | [Three Pillars of Perfection](governance/three-pillars-perfection-standard.md) | Quality doctrine: Visual UI clarity, zero-friction UX (3-step rule), and fault-tolerant engineering. |
 
 ---
 

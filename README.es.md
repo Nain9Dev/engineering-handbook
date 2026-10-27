@@ -73,6 +73,7 @@
 | **Gobernanza** | [Estándar de identidad visual](governance/visual-identity-standard.md) | Estética blueprint técnica, banners vectoriales con doble tema e integración en repositorios. |
 | **Gobernanza** | [Estándar de localización de UI](governance/ui-localization-standard.md) | Estándar de producto bilingüe (español por defecto, selector a inglés, código y docs 100% en inglés). |
 | **Gobernanza** | [Política de licencias](governance/licensing-policy.md) | Estrategia de licenciamiento en dos niveles: Derechos Reservados para marca y portfolio vs. MIT/AGPL para código. |
+| **Gobernanza** | [Tres Pilares de la Perfección](governance/three-pillars-perfection-standard.md) | Doctrina de calidad: Claridad visual UI, UX sin fricción (regla de los 3 pasos) e ingeniería tolerante a fallos. |
 
 ---
 
