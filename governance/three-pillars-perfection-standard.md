@@ -14,7 +14,7 @@ Every system, user interface, and engineering artifact delivered across the Nain
 
 ### 2.1 Immediate Visual Hierarchy
 Interfaces must guide the human eye in under one second through deliberate typographic and spatial contrast:
-- **Typographic Weight Contrast**: Clear visual anchors using `ExtraBold` (800) for primary titles, `SemiBold` (600) for section headings and metric cards, and `Regular` (400) for body reading copy.
+- **Typographic Weight Hierarchy**: Clear visual anchors using `ExtraBold` (800) for primary titles, `SemiBold` (600) for section headings and metric cards, and `Regular` (400) for body reading copy.
 - **Safety Margins & Clear Space**: All interactive containers, callouts, and hero banners maintain strict clear space (minimum `--nain-s4` / 16px padding on mobile, `--nain-s8` / 32px on desktop).
 - **Whitespace Allocation**: Whitespace is a functional boundary, not empty room. Sections separate by `--nain-s12` (48px) to `--nain-s16` (64px) to prevent cognitive overload.
 
@@ -33,7 +33,7 @@ Interfaces must guide the human eye in under one second through deliberate typog
 ### 2.4 Color Psychology & Zero Visual Fatigue
 To avoid retinal fatigue during prolonged technical audits and usage, pure uncalibrated black (`#000000`) and pure white (`#FFFFFF`) are prohibited as broad canvas fills:
 
-| Semantic Role | Token Name | Hex Value | RGB Channels | Role & Contrast Ratio |
+| Semantic Role | Token Name | Hex Value | RGB Channels | Role & WCAG Ratio |
 | :--- | :--- | :--- | :--- | :--- |
 | **Dark Canvas** | `--nain-dark-bg` | `#060D1A` | `6, 13, 26` | Primary dark surface (Ergonomic night canvas) |
 | **Dark Elevated** | `--nain-dark-elevated`| `#0B1930` | `11, 25, 48` | Raised card surface in dark mode |
