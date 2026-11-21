@@ -1,0 +1,7 @@
+# engineering-handbook
+
+> The engineering standards behind the NainDev ecosystem: tenets, a technology radar, architecture blueprints and governance policies, written as plain Markdown.
+
+- Page: https://handbook.naindev.com/
+- Source code: https://github.com/Nain9Dev/engineering-handbook
+- Author: https://www.naindev.com/
